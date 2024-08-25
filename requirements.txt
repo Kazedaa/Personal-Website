@@ -1,0 +1,9 @@
+npx create-next-app@latest
+npm i framer-motion clsx tailwind-merge
+npm install mini-svg-data-uri
+npm install tailwindcss-animate
+npm i next-themes
+npm install react-icons --save
+npm i three three-globe @react-three/fiber @react-three/drei
+npm install react-lottie
+npm i --save-dev @types/react-lottie
