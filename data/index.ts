@@ -1,6 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Publications", link: "#publications" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -100,7 +102,7 @@ export const projects = [
     title: "My Desktop SetUp - .MyDots",
     des: "Congif Files for my Wallpaper Agnostic Desktop Setup",
     img: "/dots.png",
-    iconLists: ["/css.svg", "/js.svg", "/py.svg", "/bash.svg"],
+    iconLists: ["linux.png", "/css.svg", "/js.svg", "/py.svg", "/bash.svg"],
     link: "https://github.com/Kazedaa/.MyDots",
   },
   {
@@ -129,6 +131,24 @@ export const projects = [
   }
 ];
 
+export const publications = [
+  {
+    id: 1,
+    title: "A Whole New World Seamless Image Inpainting",
+    des: "Image inpainting project using PatchGAN on the CelebA dataset. Fills in missing or damaged parts of images for enhanced photo editing, restoration, and object removal.",
+    img: "/gans.png",
+    iconLists: ["/pytorch.svg", "/py.svg", "/flask.svg", "/js.svg"],
+    link: "https://github.com/Kazedaa/A-Whole-New-World-Seamless-Image-Inpainting",
+  },
+  {
+    id: 2,
+    title: "Daily DDPM Anime",
+    des: "An Instagram AI bot that generates and posts anime pictures. The bot utilizes a deep learning model, specifically a Denoising Diffusion Probabilistic Model (DDPM), implemented with PyTorch.",
+    img: "/ddpm.png",
+    iconLists: ["/pytorch.svg", "/py.svg", "/insta.svg", "/ghac.svg"],
+    link: "https://github.com/Kazedaa/Daily-DDPM-Anime",
+  },
+];
 
 export const workExperience = [
   {
@@ -136,8 +156,8 @@ export const workExperience = [
     title: "Indian Institute of Science(IISC)",
     src: "/iisc.jpg",
     ctaText: "Paper",
-    ctaLink: "",
-    content: "As an Undergraduate Research Intern at the Electronics and Communication Department, Indian Institute of Science in Bengaluru, I worked on Un-DIVE: Underwater Domain Invariant Video Enhancement, a novel DeepLearning Computer Vision technique for enhancing underwater videos."
+    ctaLink: "https://wacv2025.thecvf.com",
+    content: "Contributed as a co-author to the development of Un-DIVE: Underwater Domain Invariant Video Enhancement, a novel state-of-the-art (SoTA) method for enhancing the quality of underwater videos, under the supervision of Dr. Prathosh A. P. The paper is currently under review for publication in the well-reputed international conference, IEEE CVF Winter Conference on Applications of Computer Vision (WACV) 2025, in Tucson, Arizona."  
   },
 ];
 
@@ -145,13 +165,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Kazedaa"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/mail.png",
+    link: "mailto:hemangjamadagni@gmail.com"
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/hemangjamadagni/"
   },
 ];

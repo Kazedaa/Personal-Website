@@ -1,19 +1,19 @@
 import React from 'react'
-import { projects } from '@/data'
+import { publications } from '@/data'
 import { PinContainer } from './ui/3DPin'
 
 
-const Projects = () => {
+const Publications = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20" id="publications">
         <h1 className="heading">
-            Projects You might {' '}
-            <span className="text-purple">Enjoy Exploring!</span>
+            A look at my {' '}
+            <span className="text-purple">Research Publications!</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-            {projects.map(({id,title,des,img,iconLists,link})=> (
+            {publications.map(({id,title,des,img,iconLists,link})=> (
                 <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
-                    <PinContainer title="Visit" href={link} >
+                    <PinContainer title="Visit" href={link}>
                         <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidding h-[30vh] mb-10 sm:h-[40vh]">
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#1316ds]'>
                                 <img src="/bg.png" alt="bg-img" />
@@ -45,4 +45,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Publications
