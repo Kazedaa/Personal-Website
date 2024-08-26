@@ -95,7 +95,6 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            {/* <div className = "absolute z-50 flex items-center justify-center text-white font-bold"/> */}
           </BackgroundGradientAnimation>
         )}
 
@@ -107,8 +106,8 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200 lg:text-3xl max-w-96 z-10">
-            {title}
+          <div className={`font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200 lg:text-3xl max-w-200 z-10  ${id == 4 && 'ml-[200px]'}`}>
+            {title} {id === 2 && <span className="text-purple">Global Impact!</span>} {id === 5 && <span className="text-purple"> Indian Institute of Science.</span>}
           </div>
         
 
@@ -117,7 +116,7 @@ export const BentoGridItem = ({
         {id===3 && (
           <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
             <div className="flex flex-col gap-3 lg:gap-8">
-              {['React.js', 'Next.js', 'Typescript'].map
+              {['PyTorch', 'Numpy', 'CUDA'].map
               ((item=>(
                 <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
               )))}
@@ -125,7 +124,24 @@ export const BentoGridItem = ({
             </div>
             <div className="flex flex-col gap-3 lg:gap-8">
             <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-              {['VueJs', 'AWS', 'MongoDB'].map
+              {['SciKit-Learn', 'Flask', 'Pandas'].map
+              ((item=>(
+                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
+              )))}
+            </div>
+          </div>
+        )}
+
+        {id===7 && (
+          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {['Python', 'C', 'C++'].map
+              ((item=>(
+                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
+              )))}
+            </div>
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {['HTML','CSS' ,'Javascript'].map
               ((item=>(
                 <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
               )))}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/Magibutton'
-import { FaLocationArrow } from 'react-icons/fa'
+import { FaLocationArrow, FaUniversity } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -20,18 +20,18 @@ const Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vm] md:max-w-2xl lg:max-w-[60vm] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-              Dynamic Web Magic with Next.js
+              Made with NextJs, Tailwind.css, ThreeJs and Framer
             </h2>
 
-            <TextGenerateEffect className = "text-center text-[40px] md:text-5xl lg:text-6xl" words = "Transforming conecpts into Seamless User Experiences"></TextGenerateEffect>
-            <p className = "text-center md:tracking-wider mb-4 text-sm  md:text-lg lg:text-2xl">Hi, I&apos;m Hemang, a Third Year Undergraduate Student@ NITK </p>
+            <TextGenerateEffect className = "text-center text-[40px] md:text-5xl lg:text-6xl" words = "Code. Create. Innovate. Shaping the future, one line at a time!"></TextGenerateEffect>
+            <p className = "text-center md:tracking-wider mb-4 text-sm  md:text-lg lg:text-2xl">Hey&#33;, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
             <a href="#about">
               <MagicButton
               title="Show My Work"
               icon={<FaLocationArrow />}
               position='right'
-
-              ></MagicButton>
+              >
+              </MagicButton>
             </a>
           </div>
         </div>

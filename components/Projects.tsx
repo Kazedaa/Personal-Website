@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <div className="py-20" id="projects">
         <h1 className="heading">
-            Some of my {' '}
-            <span className="text-purple">favorite Projects</span>
+            Projects You might {' '}
+            <span className="text-purple">Enjoy Exploring!</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
             {projects.map(({id,title,des,img,iconLists,link})=> (
@@ -31,7 +31,7 @@ const Projects = () => {
                             <div className="flex items-center">
                                 {iconLists.map((icon,index)=>(
                                     <div key={icon} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 sm:w-8 h-8 flex justify-center items-center" style={{transform :`translateX(-${5 * index * 2}px)`}}>
-                                        <img src={icon} alt={icon} className="p-2" />
+                                        <img src={icon} alt={icon} className="p-2 rounded-full" />
                                     </div>
                                 ))}
                             </div>
