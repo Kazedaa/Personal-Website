@@ -2,6 +2,7 @@ import React from 'react'
 import { projects } from '@/data'
 import { PinContainer } from './ui/3DPin'
 
+
 const Projects = () => {
   return (
     <div className="py-20" id="projects">
