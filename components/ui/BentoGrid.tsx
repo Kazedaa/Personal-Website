@@ -130,7 +130,6 @@ export const BentoGridItem = ({
             </div>
         
 
-        {/* {id===2 && <GlobeDemo />} */}
         {id===2 && <GridGlobe />}
 
         {id===3 && (
