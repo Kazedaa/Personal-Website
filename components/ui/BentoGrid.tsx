@@ -103,12 +103,28 @@ export const BentoGridItem = ({
           "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
         )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
-            {description}
+        {id===7 && (
+          <div className="flex gap-1 lg:gap-5 w-fit absolute -left-3 lg:-left-2">
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {['Python', 'C', 'C++'].map
+              ((item=>(
+                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
+              )))}
+            </div>
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {['HTML','CSS' ,'Javascript'].map
+              ((item=>(
+                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
+              )))}
+            </div>
           </div>
-          <div className={`font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200 lg:text-3xl max-w-200 z-10  ${id == 4 && 'ml-[200px]'}`}>
-            {title} {id === 2 && <span className="text-purple">Global Impact!</span>} {id === 5 && <span className="text-purple"> Indian Institute of Science.</span>}
-          </div>
+        )}
+            <div className={`font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10 ${id===7 && "text-right"}`}>
+              {description}
+            </div>
+            <div className={`font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200 lg:text-3xl max-w-200 z-10 ${id===7 && "text-right"} ${id === 4 && 'text-right'}`}>
+              {title} {id === 2 && <span className="text-purple">Global Impact!</span>} {id === 5 && <span className="text-purple"> Indian Institute of Science.</span>}
+            </div>
         
 
         {id===2 && <GlobeDemo />}
@@ -132,23 +148,6 @@ export const BentoGridItem = ({
           </div>
         )}
 
-        {id===7 && (
-          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col gap-3 lg:gap-8">
-              {['Python', 'C', 'C++'].map
-              ((item=>(
-                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
-              )))}
-            </div>
-            <div className="flex flex-col gap-3 lg:gap-8">
-              {['HTML','CSS' ,'Javascript'].map
-              ((item=>(
-                <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
-              )))}
-            </div>
-          </div>
-        )}
-
         {id === 6 &&(
           <div className="mt-5 relative">
             <div className="absolute -bottom-5 right-0">
@@ -161,7 +160,7 @@ export const BentoGridItem = ({
                 }
               }} />
               </div>
-            <MagicButton title = {copied? "Email Copied!":"Copy my Email"} icon={<IoCopyOutline/>} position ="left" otherClassesInner="bg-[#161831]" handleClick={handleCopy}/>
+            <MagicButton title = {copied? "Email Copied!":"Copy my Email"} icon={<IoCopyOutline className="m-2"/>} position ="left" otherClassesInner="bg-[#161831]" handleClick={handleCopy}/>
           </div>
         )}
       </div>

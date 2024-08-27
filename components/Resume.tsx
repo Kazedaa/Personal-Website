@@ -20,7 +20,7 @@ const Resume = () => {
       <embed className={`${open? "": "hidden"} w-[1000px] h-[1150px] rounded-3xl overflow-hidden"`} src = "/FinalResume.pdf" />
       <MagicButton 
       title = {`${open?"Close":"Open"} Résumé `}
-      icon = { <FaFilePdf />}
+      icon = { <FaFilePdf className="m-2"/>}
       position="right"
       handleClick={showResume}
       otherClasses= "mt-10"
