@@ -1,7 +1,8 @@
 'use client'
 
 import { cn } from "@/utils/cn";
-import { GlobeDemo } from "./GridGlobe";
+// import { GlobeDemo } from "./GridGlobe.tsx";
+import GridGlobe from "./GridGlobe";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Lottie from "react-lottie";
 import { useState } from "react";
@@ -106,13 +107,15 @@ export const BentoGridItem = ({
         {id===7 && (
           <div className="flex gap-1 lg:gap-5 w-fit absolute -left-3 lg:-left-2">
             <div className="flex flex-col gap-3 lg:gap-8">
-              {['Python', 'C', 'C++'].map
+              {['Python', 'C/C++',"HTML/Css/Js"].map
               ((item=>(
                 <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
               )))}
+            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
             </div>
             <div className="flex flex-col gap-3 lg:gap-8">
-              {['HTML','CSS' ,'Javascript'].map
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+              {['TailwindCSS','Typescript' ,"Next.Js"].map
               ((item=>(
                 <span key={item} className="py-2 lg:py4 lg:px3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
               )))}
@@ -127,7 +130,8 @@ export const BentoGridItem = ({
             </div>
         
 
-        {id===2 && <GlobeDemo />}
+        {/* {id===2 && <GlobeDemo />} */}
+        {id===2 && <GridGlobe />}
 
         {id===3 && (
           <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

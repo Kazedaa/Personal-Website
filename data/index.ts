@@ -60,7 +60,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently working at the",
+    title: "Currently interning at the",
     description: "Undergraduate Research Intern",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -100,7 +100,7 @@ export const projects = [
   {
     id: 3,
     title: "My Desktop SetUp - .MyDots",
-    des: "Congif Files for my Wallpaper Agnostic Desktop Setup",
+    des: "Config Files for my Wallpaper Agnostic Desktop Setup",
     img: "/dots.png",
     iconLists: ["linux.png", "/css.svg", "/js.svg", "/py.svg", "/bash.png"],
     link: "https://github.com/Kazedaa/.MyDots",

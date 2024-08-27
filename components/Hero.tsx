@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
           <TextGenerateEffect className = "text-center text-[40px] md:text-5xl lg:text-6xl" words = "Code. Create. Innovate. Shaping the future, one line at a time!"></TextGenerateEffect>
 
-          <p className = "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hey&#33;, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
+          <p className = "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hey&#33;, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a target= "_blank"href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
 
 
           <a href="#about">
