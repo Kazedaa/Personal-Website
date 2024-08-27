@@ -10,24 +10,25 @@ const Footer = () => {
         <img
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full opacity-50 h-full"
+          className="w- full opacity-50 h-full"
         />
       </div> */}
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Crafting code, creating impact.<span className='text-purple'> Thanks for visiting!</span>
         </h1>
-        <p>Would love to collaborate. Feel Free to reach out.</p>
+        <p className="text-center mb-5 mt-3">Would love to collaborate. Feel Free to reach out.</p>
         <a href="mailto:hemangjamadagni@gmail.com">
           <MagicButton 
           title="Let's get in touch!"
           icon={<FaLocationArrow />}
           position="right"
+          otherClasses='mb-5'
           />
         </a>
       </div>
       <div className="flex md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+        <p className="md:text-base text-sm md:font-normal font-light mb-3">
           Copyright © 2024 By Hemang J Jamadagni</p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile)=>

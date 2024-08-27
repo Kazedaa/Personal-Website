@@ -86,7 +86,7 @@ export const projects = [
     title: "A Whole New World Seamless Image Inpainting",
     des: "Image inpainting project using PatchGAN on the CelebA dataset. Fills in missing or damaged parts of images for enhanced photo editing, restoration, and object removal.",
     img: "/gans.png",
-    iconLists: ["/pytorch.svg", "/py.svg", "/flask.svg", "/js.svg"],
+    iconLists: ["/torch.png", "/py.svg", "/flask.svg", "/js.svg"],
     link: "https://github.com/Kazedaa/A-Whole-New-World-Seamless-Image-Inpainting",
   },
   {
@@ -94,7 +94,7 @@ export const projects = [
     title: "Daily DDPM Anime",
     des: "An Instagram AI bot that generates and posts anime pictures. The bot utilizes a deep learning model, specifically a Denoising Diffusion Probabilistic Model (DDPM), implemented with PyTorch.",
     img: "/ddpm.png",
-    iconLists: ["/pytorch.svg", "/py.svg", "/insta.svg", "/ghac.svg"],
+    iconLists: ["/torch.png", "/py.svg", "/insta.svg", "/ghac.svg"],
     link: "https://github.com/Kazedaa/Daily-DDPM-Anime",
   },
   {
@@ -102,7 +102,7 @@ export const projects = [
     title: "My Desktop SetUp - .MyDots",
     des: "Congif Files for my Wallpaper Agnostic Desktop Setup",
     img: "/dots.png",
-    iconLists: ["linux.png", "/css.svg", "/js.svg", "/py.svg", "/bash.svg"],
+    iconLists: ["linux.png", "/css.svg", "/js.svg", "/py.svg", "/bash.png"],
     link: "https://github.com/Kazedaa/.MyDots",
   },
   {
@@ -118,7 +118,7 @@ export const projects = [
     title: "End-To-End Encrypted Communication",
     des: "A purely Digital system of units that communicate between each other via end-to-end encryption. The RSA encryption algorithm will be used and the user will be able to choose the kind of encryption. The aim is to achieve secure communication between two digital systems.",
     img: "/endtoend.png",
-    iconLists: ["/verilog.svg", "/logisim.svg"],
+    iconLists: ["/verilog.png", "/logisim.svg"],
     link: "https://github.com/AdiPadi2703/End-To-End-Encrypted-Communication",
   },
   {
@@ -137,7 +137,7 @@ export const publications = [
     title: "A Whole New World Seamless Image Inpainting",
     des: "Image inpainting project using PatchGAN on the CelebA dataset. Fills in missing or damaged parts of images for enhanced photo editing, restoration, and object removal.",
     img: "/gans.png",
-    iconLists: ["/pytorch.svg", "/py.svg", "/flask.svg", "/js.svg"],
+    iconLists: ["/torch.png", "/py.svg", "/flask.svg", "/js.svg"],
     link: "https://github.com/Kazedaa/A-Whole-New-World-Seamless-Image-Inpainting",
   },
   {
@@ -145,7 +145,7 @@ export const publications = [
     title: "Daily DDPM Anime",
     des: "An Instagram AI bot that generates and posts anime pictures. The bot utilizes a deep learning model, specifically a Denoising Diffusion Probabilistic Model (DDPM), implemented with PyTorch.",
     img: "/ddpm.png",
-    iconLists: ["/pytorch.svg", "/py.svg", "/insta.svg", "/ghac.svg"],
+    iconLists: ["/torch.png", "/py.svg", "/insta.svg", "/ghac.svg"],
     link: "https://github.com/Kazedaa/Daily-DDPM-Anime",
   },
 ];
