@@ -26,20 +26,20 @@ const Hero = () => {
       <div className="flex justify-center relative mb-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-          Made with NextJs, Tailwind.css, ThreeJs and Framer
+          Built with NextJs, Tailwind.css, ThreeJs and Framer
           </p>
           <TextGenerateEffect className = "text-center text-[40px] md:text-5xl lg:text-6xl" words = "Code. Create. Innovate. Shaping the future, one line at a time!"></TextGenerateEffect>
 
-          <p className = "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hey&#33;, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a target= "_blank"href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
+          <p className = "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a target= "_blank"href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
 
 
-          <a href="#about">
+          {/* <a href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow className="m-2"/>}
               position="right"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
