@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-5 pt-36">
 
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
@@ -32,7 +32,10 @@ const Hero = () => {
 
           <p className = "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m <span className="text-purple ">Hemang J Jamadagni</span>, a Third Year Undergraduate @ <a target= "_blank"href="https://www.nitk.ac.in/" >NITK <FaUniversity className = "inline-block mb-[5px]"/></a></p>
 
-
+          <h1  id ="about" className="heading pt-20">
+            All About Me {' '}
+            <span className="text-purple">and My Passion!</span>
+          </h1>
           {/* <a href="#about">
             <MagicButton
               title="Show my work"
