@@ -1,13 +1,17 @@
+"use client";
+
 import React from "react";
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
+const Grid = dynamic(() => import("@/components/Grid"));
+const Hero = dynamic(() => import("@/components/Hero"));
+const Projects = dynamic(() => import("@/components/Projects"), {
+  ssr: false,
+});
+const Experience = dynamic(() => import("@/components/Experience"));
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
-import Publications from "@/components/Publications";
-import Footer from "@/components/Footer";
-import Resume from "@/components/Resume";
+const Publications = dynamic(() => import("@/components/Publications"));
+const Footer = dynamic(() => import("@/components/Footer"));
+import dynamic from "next/dynamic";
 
 
 export default function Home() {
